@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="realsense2_camera" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find mp400_description)/urdf/d435_camera/_d435.urdf.xacro"/>
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+
+  <!--<link name="base_link" />-->
+  <sensor_d435 parent="base_link">
+    <origin xyz="0 0 1.3" rpy="0 0 0"/>
+  </sensor_d435>
+</robot>
